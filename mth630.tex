@@ -1,0 +1,161 @@
+\documentclass[10pt]{beamer}
+\usepackage{amsmath}
+\usepackage{xfrac}
+\usepackage{graphicx}
+% Theme
+\usetheme{Copenhagen}
+
+% Title page
+\title[Predator and Prey Model]{Predator and Prey Model}
+\author[Mustafif Khan]{Mustafif Khan}
+\institute[TMU]{MTH630-W2024}
+\titlegraphic{
+   \includegraphics[height=2cm]{tmu.jpg}
+}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Lotka-Volterra Model}
+\begin{frame}{Lotka-Volterra Model}
+    The Lotka-Volterra Predator-Prey model consists of two first order
+    non-linear differential equations. The model describes the interaction
+    between
+    two species, where one species is the predator $y$ and the other is the
+    prey
+    $x$.
+    \begin{align}
+        \frac{dx}{dt} & = ax - bxy = x(a-by)     \\
+        \frac{dy}{dt} & = -cy + exy = y(-c + ex)
+    \end{align}
+    where $a$, $b$, $c$, and $e$ are $\geq 0$.
+\end{frame}
+
+\begin{frame}{Understanding the Parameters}
+    Inside the equations, the parameters have the following meanings:
+
+    \begin{itemize}
+        \item $x$: the population of the prey species (e.g. rabbits)
+        \item $y$: the population of the predator species (e.g. foxes)
+        \item $a$: the natural growth rate of prey in the absence of predation
+        \item $b$: the death rate per encounter of prey due to predation
+        \item $c$: the natural death rate of the predator in the absence of
+              prey
+        \item $e$: the efficiency of turning predated prey into predator
+              offspring
+    \end{itemize}
+\end{frame}
+
+\section{Dimensionless Equations}
+\begin{frame}{Dimensionless Equations}
+    To simplify the equations, we can make them dimensionless.
+    \begin{align*}
+        u(\tau) = \cfrac{ex(t)}{c}  \\
+        v(\tau) = -\cfrac{by(t)}{a} \\
+        \tau = at
+    \end{align*}
+    Then we have the two following differential equations:
+    \begin{align}
+        \cfrac{du}{d\tau} & = u(1 - v)      \\
+        \cfrac{dv}{d\tau} & = \alpha v(u-1)
+    \end{align}
+    Where $\alpha = \sfrac[diagonal]{c}{a}$.
+\end{frame}
+
+\section{Equilibrium Points}
+\begin{frame}{Equilibrium Points}
+    The equilibrium points of the system are found by setting the right hand
+    side of the equations to zero. This gives us the following equilibrium
+    points, $(0, 0)$ and $(1, 1)$.
+
+    The Jacobian matrix of the system is given by:
+    \begin{align*}
+        J(u, v) = \begin{bmatrix}
+                      1-v      & -u          \\
+                      \alpha v & \alpha(u-1)
+                  \end{bmatrix}
+    \end{align*}
+
+    The eigenvalues of the Jacobian matrix at the equilibrium points are
+    $J(0, 0) = \begin{bmatrix}
+            1 & 0       \\
+            0 & -\alpha
+        \end{bmatrix}$ and $J(1, 1) = \begin{bmatrix}
+            0      & -1 \\
+            \alpha & 0
+        \end{bmatrix}$
+
+    The eigenvalues of $J(0, 0)$ are $1$ and $-\alpha$, and the eigenvalues of
+    $J(1, 1)$ are $\pm i\sqrt{\alpha}$.
+\end{frame}
+
+\section{Stability Analysis}
+\begin{frame}{Stability Analysis}
+    Since the eigenvalues of $J(0, 0)$ are both real and that $\lambda_1
+        \lambda_2 < 0$, the equilibrium point $(0, 0)$ is a saddle point.
+    \\
+    Since both of the eigenvalues of $J(1, 1)$ are complex, the equilibrium
+    point $(1, 1)$ is a center, or stable/unstable spiral.
+
+    \begin{itemize}
+        \item The equilibrium point $(0, 0)$ represents when both species are extinct.
+        \item The equilibrium point $(1, 1)$ represents when both species coexist in time.
+        \item A center can lead to a regular, cyclic behavior in both populations that oscillate around the equilibrium point in a stable manner.
+        \item A stable spiral indicates that there can be a perturbation in one of the populations, but they will eventually return to the equilibrium state.
+        \item An unstable spiral suggests that the populations can experience population collapses or rapid growth due to a small perturbation.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    Consider the following example:
+    \begin{align*}
+        \cfrac{du}{d\tau} & = u(1 - v) \\
+        \cfrac{dv}{d\tau} & = 2v(u-1)
+    \end{align*}
+    This has the following Jacobian matrices at the equilibrium points:
+
+    \begin{align*}
+        J(0, 0) = \begin{bmatrix}
+                      1 & 0  \\
+                      0 & -2
+                  \end{bmatrix}
+        \quad
+        J(1, 1) = \begin{bmatrix}
+                      0 & -1 \\
+                      2 & 0
+                  \end{bmatrix}
+    \end{align*}
+\end{frame}
+
+\begin{frame}
+The Jacobian matrix at $(0, 0)$ has eigenvalues $1$ and $-2$, and the has the following phase plane analysis: 
+\begin{itemize}
+    \item Trace = $1 - 2 = -1$
+    \item Determinant = $1 \cdot -2 = -2$
+    \item Discriminant = $(-1)^2 - 4(-2) = 1 + 8 = 9$
+\end{itemize}
+
+Since the discriminant is positive and the determinant is negative, the equilibrium point $(0, 0)$ is a saddle point.
+\end{frame}
+
+\begin{frame}
+The Jacobian matrix at $(1, 1)$ has eigenvalues $\pm i\sqrt{2}$, and the phase plane analysis is as follows:
+\begin{itemize}
+    \item Trace = $0$
+    \item Determinant = $0 - (-2) = 2$
+    \item Discriminant = $0^2 - 8 = -8$
+\end{itemize}
+
+Since the discriminant is negative and the trace is zero, the equilibrium point $(1, 1)$ is a center.
+
+\end{frame}
+
+\end{document}
