@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1711922136 "writeup.xdv" "writeup.pdf" "writeup" 1711922136
-  "writeup.xdv" 1711922136 37948 d639d32da924f7f0c8976be8a061b83e "xelatex"
+["xdvipdfmx"] 1712249484 "writeup.xdv" "writeup.pdf" "writeup" 1712249484
+  "writeup.xdv" 1712249484 38996 bcaf66929a62dfdb264bb1b042020b17 "xelatex"
   (generated)
   "writeup.pdf"
-["xelatex"] 1711922136 "/hdd/MTH630Pres/writeup.tex" "writeup.xdv" "writeup" 1711922136
+["xelatex"] 1712249483 "/hdd/MTH630Pres/writeup.tex" "writeup.xdv" "writeup" 1712249484
   "/etc/texmf/web2c/texmf.cnf" 1692229349 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/hdd/MTH630Pres/writeup.tex" 1711922135 5783 b0d2339901424e10fa426a7a28796783 ""
+  "/hdd/MTH630Pres/writeup.tex" 1712249483 6297 3348920b27283150185726d5151683c4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -42,6 +42,7 @@
   "/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty" 1576625273 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
   "/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty" 1576625223 8371 9d55b8bd010bc717624922fb3477d92e ""
   "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1583617216 6501 4011d89d9621e0b0901138815ba5ff29 ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
   "/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty" 1575499628 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty" 1576625065 31769 002a487f55041f8e805cfbf6385ffd97 ""
   "/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty" 1576878844 5412 d5a2436094cd7be85769db90f29250a6 ""
@@ -75,6 +76,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty" 1561238569 51697 f8f08183cd2080d9d18a41432d651dfb ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def" 1616189247 15263 06bfc49e20bdfcb827e011063ecb4ae6 ""
@@ -115,10 +117,11 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1710456949 5135607 6b29d4064a53abd022e3af16adcc8397 ""
-  "writeup.aux" 1711922136 1145 dc1f76a971908687575879a1ba7f9869 "xelatex"
-  "writeup.out" 1711922136 597 97f52541c9ed5760cc956298ab9aee95 "xelatex"
-  "writeup.tex" 1711922135 5783 b0d2339901424e10fa426a7a28796783 ""
-  "writeup.toc" 1711922136 306 b528847f8fd6aa040ca59e8d4c6e189e "xelatex"
+  "plot.jpg" 1712248867 71718 470207af17a0ddb664f246ccd81720b0 ""
+  "writeup.aux" 1712249484 1292 e78f0e422c04c9bb1c0457cace09eebc "xelatex"
+  "writeup.out" 1712249484 597 97f52541c9ed5760cc956298ab9aee95 "xelatex"
+  "writeup.tex" 1712249483 6297 3348920b27283150185726d5151683c4 ""
+  "writeup.toc" 1712249484 306 b528847f8fd6aa040ca59e8d4c6e189e "xelatex"
   (generated)
   "writeup.aux"
   "writeup.log"
